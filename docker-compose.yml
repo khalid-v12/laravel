@@ -5,11 +5,11 @@ services:
       context: .
     volumes:
       - ./src:/var/www/html
-      - ./docker/configs/laravel.env:/var/www/html/.env
+      - ./docker/configs/laravel.dev.env:/var/www/html/.env
     ports:
       - "80:80"
     env_file:
-      - ./docker/configs/laravel.env
+      - ./docker/configs/laravel.dev.env
     networks:
       - laravel
   mysql-db:
