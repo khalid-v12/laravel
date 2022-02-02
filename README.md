@@ -6,10 +6,10 @@
   you can also use vscode plugin docker gui (right click and attach shell)
 
 ## DB Setup
-- edit `src/tests/dumps/init.sql` && restart conatiners
+- edit `src/tests/dumps/init.sql` and restart conatiners `docker-compose down && docker-compose up -d`
 
 ## Laravel env Setup
-- edit `docker/configs/laravel.dev.env` && restart conatiners
+- edit `docker/configs/laravel.dev.env` and restart conatiners `docker-compose down && docker-compose up -d`
 
 
 ## Run laravel
